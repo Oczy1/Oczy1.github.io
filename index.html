@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"> -->
-    <link rel="stylesheet" href="css/style.min.css?_v=20230501161017">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -19,19 +19,28 @@
         <header class="header">
     <div class="header__container container">
         <div class="header__menu menu">
-            <nav class="menu__body">
-                <div class="menu__icon">
-                    <img src="" class="logo"></img>
-                    <span class="logo-item"></span>
+            <nav class="menu__body flex flex-row flex-between fw">
+                <div class='menu__logo'>
+                    <h1 class='logo' data-text="Kir@">Kir@</h1>
                 </div>
-                <ul class="menu__list">
-                    <li><a href="data-goto" data-goto=".content-x1" class="menu__link">Главная</a></li>
-                    <li><a href="data-goto" data-goto=".content-x2" class="menu__link">Особенности</a></li>
-                    <li><a href="data-goto" data-goto=".content-x3" class="menu__link">Отзывы</a></li>
-                </ul>
-                <button class="menu__btn icon-download" onclick="showModal ()">
-                    <span></span>
-                </button>
+                <div class='menu__nav'>
+                    <div class='menu__item flex-row'>
+                        <ul class="menu__list">
+                            <li><a href="data-goto" data-goto=".content-x1" class="menu__link">work</a></li>
+                            <li><a href="data-goto" data-goto=".content-x2" class="menu__link">About</a></li>
+                            <li><a href="data-goto" data-goto=".content-x3" class="menu__link">contact</a></li>
+                        </ul>
+                        <ul class="menu__list contacts">
+                            <li><a href="/" class="menu__link email">iioczyii@gmail.com</a></li>
+                            <li><a href="/" class="menu__link tg">https://t.me/Oczyy</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu__icon">
+                        <span class="icon-menu"></span>
+                        <span class="icon-menu"></span>
+                    </div>
+                </div>
+
             </nav>
         </div>
     </div>
@@ -135,15 +144,42 @@
             </section>
         </main>
         <footer class="footer">
-    <div class="footer__container">
-        <div class="footer__info">
-            <span>По всем вопросам пишите на почту <a href="#">discorddownloaderu@gmail.com</a>
-               <br> Г. Москва, проспект Мира д. 12, Григорян Сергей Владимирович</span>
+    <div class="footer__container container flex-col gap-25">
+        <div class="footer__menu menu flex-row">
+            <div class='footer__body flex-row'>
+                <div class='footer__nav'>
+                    <ul class='footer__list'>
+                        <li><a href='' class='footer__link'>work</a></li>
+                        <li><a href='' class='footer__link'>about</a></li>
+                        <li><a href='' class='footer__link'>contact</a></li>
+                    </ul>
+                </div>
+                <div class='footer__social'>
+                    <ul class='footer__list'>
+                        <li><a href='' class='footer__link'>Telegram</a></li>
+                        <li><a href='' class='footer__link'>Vk</a></li>
+                        <li><a href='' class='footer__link'>Behance</a></li>
+                        <li><a href='' class='footer__link'>dribble</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class='footer__contacts'>
+                <ul class='footer__list'>
+                    <li><a href='' class='footer__link email'>iioczyii@gmail.com</a></li>
+                    <li><a href='' class='footer__link tg'>https://t.me/Oczyy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class='footer__copyrating'>
+            <div class='copyrating flex-col'>
+                <span class='copyrating__item'>©2022</span>
+                <span class='copyrating__item'>by kir@</span>
+            </div>
         </div>
     </div>
 </footer>
     </div>
-    <script src="js/app.min.js?_v=20230501161017"></script>
+    <script src="js/app.min.js"></script>
 </body>
 
 </html>

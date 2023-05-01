@@ -1,19 +1,28 @@
 <header class="header">
     <div class="header__container container">
         <div class="header__menu menu">
-            <nav class="menu__body">
-                <div class="menu__icon">
-                    <img src="" class="logo"></img>
-                    <span class="logo-item"></span>
+            <nav class="menu__body flex flex-row flex-between fw">
+                <div class='menu__logo'>
+                    <h1 class='logo' data-text="Kir@">Kir@</h1>
                 </div>
-                <ul class="menu__list">
-                    <li><a href="data-goto" data-goto=".content-x1" class="menu__link">Главная</a></li>
-                    <li><a href="data-goto" data-goto=".content-x2" class="menu__link">Особенности</a></li>
-                    <li><a href="data-goto" data-goto=".content-x3" class="menu__link">Отзывы</a></li>
-                </ul>
-                <button class="menu__btn icon-download" onclick="showModal ()">
-                    <span></span>
-                </button>
+                <div class='menu__nav'>
+                    <div class='menu__item flex-row'>
+                        <ul class="menu__list">
+                            <li><a href="data-goto" data-goto=".content-x1" class="menu__link">work</a></li>
+                            <li><a href="data-goto" data-goto=".content-x2" class="menu__link">About</a></li>
+                            <li><a href="data-goto" data-goto=".content-x3" class="menu__link">contact</a></li>
+                        </ul>
+                        <ul class="menu__list contacts">
+                            <li><a href="/" class="menu__link email">iioczyii@gmail.com</a></li>
+                            <li><a href="/" class="menu__link tg">https://t.me/Oczyy</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu__icon">
+                        <span class="icon-menu"></span>
+                        <span class="icon-menu"></span>
+                    </div>
+                </div>
+
             </nav>
         </div>
     </div>
